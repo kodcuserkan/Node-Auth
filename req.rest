@@ -1,0 +1,37 @@
+GET http://localhost:8000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib21lciIsImlhdCI6MTU5NzMwMDU0MiwiZXhwIjoxNTk3MzAwNjQyfQ.E80yH2h1Yl5INON9ERlZFaOJDho2h77zvwmafD-O-DE
+
+###
+
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "username" : "omer"
+}
+
+###
+
+DELETE http://localhost:9000/logout
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib21lciIsImlhdCI6MTU5NzMwMDk5N30.B3PBh9NHqJ66fSGrTpeP4nmRn9yozfX34oY98NrNtRg"
+}
+
+###
+
+POST http://localhost:9000/login
+Content-Type: application/json
+
+{
+    "username" : "omer"
+}
+
+###
+
+POST http://localhost:9000/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib21lciIsImlhdCI6MTU5NzMwMDk5N30.B3PBh9NHqJ66fSGrTpeP4nmRn9yozfX34oY98NrNtRg"
+}
